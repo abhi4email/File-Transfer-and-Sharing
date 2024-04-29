@@ -1,0 +1,15 @@
+.page-body.margins {
+    margin: 20px 30px 0 30px;
+}
+
+body.theme-dark .alert {
+    background: none !important;
+}
+
+body.theme-dark .markdown>table>:not(caption)>*>*, body.theme-dark .table>:not(caption)>*>* {
+    box-shadow: none !important;
+}
+
+body.theme-dark pre {
+    background: none !important;
+}

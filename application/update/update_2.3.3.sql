@@ -1,0 +1,1 @@
+ALTER TABLE Sharify_sessions ADD PRIMARY KEY (id);

@@ -1,0 +1,1 @@
+ALTER TABLE Sharify_settings MODIFY COLUMN expire VARCHAR(100);

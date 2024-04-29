@@ -1,0 +1,484 @@
+@import url("animate.css");
+@import url("../../../css/social_icons.css");
+
+body {
+    background: url("") no-repeat center center fixed;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-transition: background 1s ease-in-out;
+    -moz-transition: background 1s ease-in-out;
+    -o-transition: background 1s ease-in-out;
+    -ms-transition: background 1s ease-in-out;
+    transition: background 1s ease-in-out;
+    -webkit-backface-visibility: hidden;
+}
+
+.alert-success a {
+    color: white;
+    text-decoration: underline;
+}
+
+.background {
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: -100 !important;
+    cursor: pointer;
+}
+
+.background .vegas-timer {
+    display: none;
+}
+
+.background .vegas-slide-inner a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.file-select {
+  min-width: 100%;
+  margin-top: 5px;
+}
+
+.drop-overlay {
+  pointer-events: none;
+  display: none;
+  position: fixed;
+  z-index: 10;
+  border-color: #FFF;
+  border-style: dotted;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.drop-overlay p {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #FFF;
+}
+
+#upload-form-list {
+    position: relative;
+    width: 100%;
+    font-size: 12px;
+    max-height: 45px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#upload-form-list .file-title {
+    max-width: 250px;
+    display: block;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+#total_upload_size {
+  font-size: 8px !important;
+  font-style: italic;
+}
+
+.upload_section {
+  margin-bottom: 10px;
+}
+
+.dz-image-preview {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 95%;
+  display: block;
+  overflow: hidden;
+}
+
+.file-remove-btn {
+  cursor: pointer;
+  color: #BABABA;
+}
+
+.file-title {
+  margin-left: 5px;
+}
+
+#errorDiv {
+  margin-left: 30px;
+}
+
+.uploadSettings {
+    position: relative;
+    width: 700px;
+    height: 390px;
+    border-radius: 6px;
+    float: right;
+    background-color: #FFFFFF;
+    z-index: 999;
+    border: 1px solid #DCE4EC;
+}
+
+.main {
+    background-color: #FFF;
+    min-height: 390px;
+    width: 310px;
+    border-radius: 9px;
+    float: left;
+    position: relative;
+    border: 1px solid #DCE4EC;
+}
+
+/************ Above edited in v1.2.7 ***********/
+
+.btn-success {
+  background-color: #E34440;
+  border-color: #E34440;
+}
+
+.btn-success:hover {
+  color: #FFF;
+  background-color: #B14942;
+  border-color: #B14942;
+}
+
+.btn-default {
+  background-color: #E34440;
+  border-color: #E34440;
+}
+
+.btn-default.active {
+  background-color: #BF3733;
+  border-color: #BF3733;
+}
+
+.btn-default:hover {
+  color: #FFF;
+  background-color: #B14942;
+  border-color: #B14942;
+}
+
+.filesButton {
+  color: #FFF;
+  background-color: #E34440;
+  border-color: #E34440;
+}
+
+.filesButton:hover {
+  color: #FFF;
+  background-color: #B14942;
+  border-color: #B14942;
+}
+
+#addReceiver {
+  color: #FFF;
+  background-color: #E34440;
+  border-color: #E34440;
+}
+
+#addReceiver:hover {
+  color: #FFF;
+  background-color: #B14942;
+  border-color: #B14942;
+}
+
+#settingsButton {
+  color: #FFF;
+  background-color: #E34440;
+  border-color: #E34440;
+}
+
+#settingsButton:hover {
+  color: #FFF;
+  background-color: #B14942;
+  border-color: #B14942;
+}
+
+#submit_upload {
+  color: #FFF;
+  background-color: #E34440;
+  border-color: #E34440;
+}
+
+#submit_upload:hover {
+  color: #FFF;
+  background-color: #B14942;
+  border-color: #B14942;
+}
+
+.OuterDiv {
+  width: 100%; 
+  height: 100%; 
+  z-index:10;
+}
+
+.social {
+  width: 30px;
+  float: left;
+  padding-top: 25px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .social {
+    display: none;
+  }
+}
+
+.logo {
+	display:block;
+	margin:auto;
+  padding-top: 10px;
+  height: 63px;
+}
+
+.file_list {
+  width: 100%;
+  height: 55px;
+  overflow-y: auto;
+  display: none;
+  line-height: 5px;
+}
+
+.file_list p {
+  padding-top: 3px;
+}
+
+.MainOuter {
+	display: table;
+	position: absolute;
+	height: 100%;
+	margin-left: 10px;
+}
+
+.MainMiddle {
+	display: table-cell;
+	vertical-align: middle;
+    max-width: 340px;
+}
+
+.MainContent {
+	margin-left: auto;
+	margin-right: auto;
+    width: 1100px;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+
+input[disabled] {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+.buttonSection {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.list-btn-section {
+  margin-bottom: 0;
+}
+
+a.settingsNav {
+  color: #000000;
+  font-size: 14px;
+}
+
+a.settingsNav:hover {
+  text-decoration: none;
+}
+
+.settingsNav {
+    display: block;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.settingsContent {
+  float: left; 
+  height: 100%; 
+  width: 540px;
+  overflow-y: auto;
+}
+
+.settingsBody {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.advertisement {
+  margin-top: 20px;
+  background-color: #FFF;
+  height: 145px;
+  width: 350px;
+  border-radius: 9px;
+  float: left;
+  position: relative;
+}
+
+.FormContent {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#receivers {
+  width: 100%;
+  height: 30px; 
+  overflow: auto;
+}
+
+.EmailFromSection {
+  padding-top: 10px;
+}
+
+.progressround {          
+  position: absolute;
+  left: 42%;
+  top: 40%;
+  margin: -130px 0 0 -100px;
+}
+
+.progresssuccess { 
+  width: 250px;       
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -220px 0 0 -125px;
+}
+
+.td_2 { 
+  padding-left: 20px;
+}
+
+.headerDivider {
+    position: relative;
+    border-left:1px solid #EDE7E7;
+    border-right:1px solid #EDE7E7;
+    height:100%;
+    left: 150px;
+    width: 1px;
+}
+
+.progressImage {
+    text-align:center;
+}
+
+.progressMessage {
+  padding-top: 15px; 
+  font-size: 14px;
+}
+
+.overlay-back { 
+  position   : absolute; 
+  top        : 0; 
+  left       : 0; 
+  width      : 100%; 
+  height     : 100%; 
+  background : #000; 
+  opacity    : 0.7; 
+  filter     : alpha(opacity=60); 
+  z-index    : 5;
+  display    : none;
+}
+ 
+.overlay { 
+  position : absolute; 
+  top      : 0; 
+  left     : 0; 
+  width    : 100%; 
+  height   : 100%; 
+  z-index  : 10;
+  display  : none;
+}
+
+#bglink{
+  display:block;
+  height:100%;
+  width:100%;
+  position:fixed;
+  left:0;
+  top:0;
+  z-index:0;
+  text-indent:-5000em;
+}
+
+#termsDiv {
+  text-align: center;
+}
+
+#downloadSuccess {
+  width: 70%; 
+  margin-left: auto; 
+  margin-right: auto; 
+  display: none;
+}
+
+#downloadError {
+  width: 70%; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+#downloadForm {
+    width: 70%;
+    margin: 0 auto 50px auto;
+    font-size: 13px;
+}
+
+#upload_section input[type='file'] {
+    position: absolute;
+    z-index: -1;
+    display: none !important;
+}
+
+.show-mobile {
+    display: none;
+}
+
+.settingsBodyContent::-webkit-scrollbar {
+    display: none;
+}
+
+.contact-form {
+    font-size: 14px;
+}
+
+.contact-form input, .contact-form .input-group, .contact-form textarea {
+    width: 100% !important;
+}
+
+.contact-form .g-recaptcha {
+    float: left;
+}
+
+.contact-form .btn {
+    float: right;
+    margin-top: 30px;
+}

@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.background {
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: -100 !important;
+    cursor: pointer;
+    background: #000;
+}
+
+.background .vegas-timer {
+    display: none;
+}
+
+.background .vegas-slide-inner a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.drop-overlay {
+    pointer-events: none;
+    display: none;
+    position: fixed;
+    z-index: 10;
+    border-color: #FFF;
+    border-style: dotted;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.drop-overlay p {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #FFF;
+}
+
+.tabs {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.tabs li {
+    font-size: 14px;
+}
+
+.tabs li a {
+    background: #FFF;
+    color: black;
+    font-weight: 600;
+}
+
+.tabs li.is-active a {
+    background: black;
+    color: white;
+}
+
+.upload-block {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.upload-block .upload-block-inner {
+    position: relative;
+    display: block;
+    background: white;
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.upload-block .upload-block-content {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.upload-block .upload-block-content.active {
+    display: flex;
+}
+
+.upload-block .upload-block-content .add-files {
+    width: 300px;
+    height: 300px;
+}
+
+
+.upload-block .upload-block-content span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: -10px;
+}

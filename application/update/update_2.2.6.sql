@@ -1,0 +1,1 @@
+INSERT INTO Sharify_themes (`name`,`path`,`status`) VALUES ('Modern','modern','stopped');

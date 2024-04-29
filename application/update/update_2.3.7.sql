@@ -1,0 +1,1 @@
+ALTER TABLE Sharify_files MODIFY `size` varchar(100) DEFAULT NULL;
